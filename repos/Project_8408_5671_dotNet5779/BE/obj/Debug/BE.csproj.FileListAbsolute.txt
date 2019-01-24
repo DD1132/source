@@ -1,0 +1,8 @@
+C:\Users\didi\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.csprojAssemblyReference.cache
+C:\Users\didi\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\bin\Debug\BE.dll.config
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\bin\Debug\BE.dll
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\bin\Debug\BE.pdb
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.dll
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.pdb

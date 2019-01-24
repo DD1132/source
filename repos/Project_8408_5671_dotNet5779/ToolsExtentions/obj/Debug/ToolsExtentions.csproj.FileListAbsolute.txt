@@ -1,0 +1,2 @@
+C:\Users\didi\source\repos\Project_8408_5671_dotNet5779\ToolsExtentions\obj\Debug\ToolsExtentions.csprojAssemblyReference.cache
+C:\Users\didi\source\repos\Project_8408_5671_dotNet5779\ToolsExtentions\obj\Debug\ToolsExtentions.csproj.CoreCompileInputs.cache
