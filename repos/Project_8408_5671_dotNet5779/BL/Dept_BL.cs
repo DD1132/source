@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Net;
+using System.Xml;
 using BE;
 
 namespace BL
@@ -396,6 +399,158 @@ namespace BL
                     select item;
             if (v.Any()) { throw new Exception("The trainee faild in a test in less then 7 days"); }
 
+        }
+        public Tester findATester(DrivingTest test)
+        {
+            //עובר על כל הטסטרים מאותו סוג רכב ובודק האם הם זמינים
+            var v = from t1 in TestersExpertise(test.carType)
+                    from t2 in rangOfTesters(test.StartingPoint)
+                    where t1.ID == t2.ID
+                    select t1;
+            foreach (var item in v)
+            {
+                if (AvailableTester(item, test.Date))
+                {
+                    return item;
+                }
+            }
+            // if there is no free tester
+            TimeExchangeForTest(test);
+            return null;
+        }
+        public List<Tester> TestersExpertise(CarType carType)
+        {
+            var v = from tester in dal.GetTesters()
+                    group tester by tester.Expertise == carType;
+
+            List<Tester> newList = new List<Tester>();
+            foreach (var item in v)
+            {
+                if (item.Key)
+                {
+                    foreach (Tester item1 in item)
+                        newList.Add(item1);
+                }
+            }
+            return newList;
+        }
+        public List<Tester> rangOfTesters(Address address)
+        {
+            Random X = new Random();
+            List<Tester> testersByRange = new List<Tester>();
+            var rangGroup = from tester in dal.GetTesters()
+                            group tester by tester.MaxDistance > getRange(tester.Address.ToString(), address.ToString())/* X.Next(0,100) */into g
+                            select new { corect = g.Key, testers = g };
+            foreach (var item in rangGroup)
+            {
+                if (item.corect)
+                {
+                    foreach (var tester in item.testers)
+                        testersByRange.Add(tester);
+                }
+            }
+            return testersByRange;
+        }
+        public int getRange(string origin, string destination)
+        {
+            Random X = new Random();//for error occurreds
+            string KEY = @"xFdAUGGj5faNqCt7LbMsHqEaSv26ikUb";
+            string url = @"https://www.mapquestapi.com/directions/v2/route" +
+             @"?key=" + KEY +
+             @"&from=" + origin +
+             @"&to=" + destination +
+             @"&outFormat=xml" +
+             @"&ambiguities=ignore&routeType=fastest&doReverseGeocode=false" +
+             @"&enhancedNarrative=false&avoidTimedConditions=false";
+            //request from MapQuest service the distance between the 2 addresses
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            WebResponse response = request.GetResponse();
+            Stream dataStream = response.GetResponseStream();
+            StreamReader sreader = new StreamReader(dataStream);
+            string responsereader = sreader.ReadToEnd();
+            response.Close();
+            //the response is given in an XML format
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.LoadXml(responsereader);
+            if (xmldoc.GetElementsByTagName("statusCode")[0].ChildNodes[0].InnerText == "0")
+            //we have the expected answer
+            {
+                //display the returned distance
+                XmlNodeList distance = xmldoc.GetElementsByTagName("distance");
+                double distInMiles = Convert.ToDouble(distance[0].ChildNodes[0].InnerText);
+                //Console.WriteLine("Distance In KM: " + distInMiles * 1.609344);
+                return (int)(distInMiles * 1.609344);
+                //display the returned driving time
+                //XmlNodeList formattedTime = xmldoc.GetElementsByTagName("formattedTime");
+                //string fTime = formattedTime[0].ChildNodes[0].InnerText;
+                //Console.WriteLine("Driving Time: " + fTime);
+            }
+            else if (xmldoc.GetElementsByTagName("statusCode")[0].ChildNodes[0].InnerText == "402")
+            //we have an answer that an error occurred, one of the addresses is not found
+            {
+                return X.Next(0, 300);
+                //Console.WriteLine("an error occurred, one of the addresses is not found. try again.");
+            }
+            else //busy network or other error...
+            {
+                return X.Next(0, 300);
+                //Console.WriteLine("We have'nt got an answer, maybe the net is busy...");
+            }
+        }
+        public bool AvailableTester(Tester tester, DateTime Date)
+        {
+            //האם הטסטר עובד
+            if (tester.Luz.Data[(int)Date.DayOfWeek][Date.Hour - 9] == false)
+            {
+                return false;
+            }
+            //האם כבר יש לו טסט באותו שעה
+            var v = from t in dal.GetDrivingTests()
+                    where t.Tester_ID == tester.ID && SameWeek(t.Date, Date)
+                    // orderby t.Date==Date
+                    select t;
+            foreach (var item in v)
+            {
+                if (item.Date == Date)
+                {
+                    return false;
+                }
+            }
+            //האם עבר את כמות הטסטים המותרת באותו שבוע
+            if (v.Count() >= tester.MaxTestWeekly)
+            {
+                return false;
+            }
+            return true;
+        }
+        public void TimeExchangeForTest(DrivingTest test)
+        {
+            Console.WriteLine("at " + test.Date.Hour + " o'clock there is no free tester." +
+                "If you want there are free testers at:");
+            test.Date = test.Date.AddHours(9 - test.Date.Hour);
+            for (int i = 0; i < 6; i++)
+            {
+                if (findIfATester(test))
+                {
+                    Console.WriteLine(test.Date.Hour + ":00");
+                }
+                test.Date = test.Date.AddHours(1);
+            }
+        }
+        public bool findIfATester(DrivingTest test)
+        {
+            var v = from t1 in TestersExpertise(test.carType)
+                    from t2 in rangOfTesters(test.StartingPoint)
+                    where t1.ID == t2.ID
+                    select t1;
+            foreach (var item in v)
+            {
+                if (AvailableTester(item, test.Date))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
