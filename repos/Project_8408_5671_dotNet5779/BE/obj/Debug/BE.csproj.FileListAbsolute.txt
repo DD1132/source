@@ -6,3 +6,4 @@ C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\bin\Debug\BE.pdb
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.dll
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.pdb
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\BE\obj\Debug\BE.csprojAssemblyReference.cache

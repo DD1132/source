@@ -547,173 +547,173 @@ namespace UI
             {
                 Console.WriteLine(e);
             }
-            //            try
-            //            {
-            //                bl.UpdateTrainee(new Trainee()
-            //                {
-            //                    ID = "S1",
-            //                    Name = new Name { FirstName = "s1", LastName = "s1" },
-            //                    Address = new Address
-            //                    {
-            //                        City = "s1",
-            //                        Number = 1,
-            //                        StreetName = "s1",
+            try
+            {
+                bl.UpdateTrainee(new Trainee()
+                {
+                    ID = "S1",
+                    Name = new Name { FirstName = "s1", LastName = "s1" },
+                    Address = new Address
+                    {
+                        City = "s1",
+                        Number = 1,
+                        StreetName = "s1",
 
 
-            //                    },
-            //                    phoneNumber = "0542520196",
-            //                    CarTrained = CarType.TwoWheels,
-            //                    GearType = GearType.Automatic,
-            //                    DrivingSchool = "beit sefer",
-            //                    Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
-            //                    LessonsNb = 20,
-            //                    DayOfBirth = DateTime.Now.AddYears(-17),
-            //                    Gender = Gender.MALE,
-            //                });
-            //            }
-            //            catch (Exception e)
-            //            { Console.WriteLine(e); }
+                    },
+                    phoneNumber = "0542520196",
+                    CarTrained = CarType.TwoWheels,
+                    GearType = GearType.Automatic,
+                    DrivingSchool = "beit sefer",
+                    Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
+                    LessonsNb = 20,
+                    DayOfBirth = DateTime.Now.AddYears(-17),
+                    Gender = Gender.MALE,
+                });
+            }
+            catch (Exception e)
+            { Console.WriteLine(e); }
 
 
-            //            try
-            //            {
-            //                bl.AddDrivingTest(new DrivingTest()
-            //                {
-            //                    requirements = new Requirements(),
-            //                    StartingPoint=new Address(),
-            //                    Trainee_ID = "S3",
-            //                    Date = new DateTime(2018, 12, 17, 9, 0, 0),
-            //                    Success = false
-            //                });
-            //            }
-            //            catch (Exception e)
-            //            {
-            //                Console.WriteLine(e);
-            //            }
+            try
+            {
+                bl.AddDrivingTest(new DrivingTest()
+                {
+                    requirements = new Requirements(),
+                    StartingPoint = new Address(),
+                    Trainee_ID = "S3",
+                    Date = new DateTime(2018, 12, 17, 9, 0, 0),
+                    Success = false
+                });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
 
-            //            try
-            //            {
-            //                bl.AddDrivingTest(new DrivingTest()
-            //                {
-            //                    requirements = new Requirements(),
-            //                    StartingPoint = new Address(),
-            //                    Trainee_ID = "S4",
-            //                    Date = new DateTime(2018, 12, 30, 9, 0, 0),
-            //                    Success = false
-            //                });
-            //            }
-            //            catch (Exception e)
-            //            {
-            //                Console.WriteLine(e);
-            //            }
-            //            try
-            //            {
-            //                bl.AddDrivingTest(new DrivingTest()
-            //                {
-            //                    requirements = new Requirements(),
-            //                    StartingPoint = new Address(),
+            try
+            {
+                bl.AddDrivingTest(new DrivingTest()
+                {
+                    requirements = new Requirements(),
+                    StartingPoint = new Address(),
+                    Trainee_ID = "S4",
+                    Date = new DateTime(2018, 12, 30, 9, 0, 0),
+                    Success = false
+                });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            try
+            {
+                bl.AddDrivingTest(new DrivingTest()
+                {
+                    requirements = new Requirements(),
+                    StartingPoint = new Address(),
 
-            //                    Trainee_ID = "S5",
-            //                    Date = new DateTime(2018, 12, 30, 9, 0, 0),
-            //                    Success = false
-            //                });
-            //            }
-            //            catch (Exception e)
-            //            {
-            //                Console.WriteLine(e);
-            //            }
-            //            try
-            //            {
-            //                bl.AddDrivingTest(new DrivingTest()
-            //                {
-            //                    requirements = new Requirements(),
-            //                    StartingPoint = new Address(),
-            //                    Trainee_ID = "S1",
-            //                    Date = new DateTime(2018, 12, 30, 9, 0, 0),
-            //                    Success = false
-            //                });
-            //            }
-            //            catch (Exception e)
-            //            {
-            //                Console.WriteLine(e);
-            //            }
-            //            Console.WriteLine("\n\n\n-----------------------\n\n\n");
-            //            DrivingTest m1 = new DrivingTest
-            //            {
-            //                requirements = new Requirements(),
-            //                StartingPoint = new Address(),
+                    Trainee_ID = "S5",
+                    Date = new DateTime(2018, 12, 30, 9, 0, 0),
+                    Success = false
+                });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            try
+            {
+                bl.AddDrivingTest(new DrivingTest()
+                {
+                    requirements = new Requirements(),
+                    StartingPoint = new Address(),
+                    Trainee_ID = "S1",
+                    Date = new DateTime(2018, 12, 30, 9, 0, 0),
+                    Success = false
+                });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            Console.WriteLine("\n\n\n-----------------------\n\n\n");
+            DrivingTest m1 = new DrivingTest
+            {
+                requirements = new Requirements(),
+                StartingPoint = new Address(),
 
-            //                Trainee_ID = "S7",
-            //                Date = new DateTime(2018, 12, 27, 10, 0, 0),
-            //                Success = false
+                Trainee_ID = "S7",
+                Date = new DateTime(2018, 12, 27, 10, 0, 0),
+                Success = false
 
-            //            };
+            };
 
-            //            try
-            //            {
-            //                bl.AddDrivingTest(m1);
-            //            }
-            //            catch (Exception e)
-            //            {
-            //                Console.WriteLine(e);
-            //            }
-            //            m1.requirements.U_turn = true;
-            //            m1.requirements.speed = true;
-            //            m1.requirements.revers = true;
-            //            m1.requirements.breks = true;
-            //            m1.requirements.Mirrors = true;
-            //            m1.requirements.blinks = true;
-            //            try
-            //            {
-            //                bl.UpdateDrivingTest(m1);
-            //            }
-            //            catch (Exception e)
-            //            {
-            //                Console.WriteLine(e);
-            //            }
-            //            Console.WriteLine("\n\n\n-----------------------\n\n\n");
-            //            Console.WriteLine(m1.ToString());
+            try
+            {
+                bl.AddDrivingTest(m1);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            m1.requirements.U_turn = true;
+            m1.requirements.speed = true;
+            m1.requirements.revers = true;
+            m1.requirements.breks = true;
+            m1.requirements.Mirrors = true;
+            m1.requirements.blinks = true;
+            try
+            {
+                bl.UpdateDrivingTest(m1);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            Console.WriteLine("\n\n\n-----------------------\n\n\n");
+            Console.WriteLine(m1.ToString());
 
-            //            //Console.WriteLine("Trainees\n--------------------------------------\n");
+            //Console.WriteLine("Trainees\n--------------------------------------\n");
 
-            //            //foreach (Trainee item in bl.GetTrainees())
-            //            //{
-            //            //    Console.WriteLine(item.ToString());
+            //foreach (Trainee item in bl.GetTrainees())
+            //{
+            //    Console.WriteLine(item.ToString());
 
-            //            //}
+            //}
 
-            //            Console.WriteLine("\nTesters\n---------------------------------------\n");
+            Console.WriteLine("\nTesters\n---------------------------------------\n");
 
-            //            foreach (Tester item in bl.GetTesters())
-            //            {
-            //                Console.WriteLine(item.ToString());
+            foreach (Tester item in bl.GetTesters())
+            {
+                Console.WriteLine(item.ToString());
 
-            //            }
+            }
 
-            //            Console.WriteLine("\nTests\n-----------------------------------------\n");
-            //            foreach (DrivingTest item in bl.GetDrivingTests())
-            //            {
-            //                Console.WriteLine(item.ToString());
+            Console.WriteLine("\nTests\n-----------------------------------------\n");
+            foreach (DrivingTest item in bl.GetDrivingTests())
+            {
+                Console.WriteLine(item.ToString());
 
 
-            //            }
-            //            Console.WriteLine("\nupdate\n-----------------------------------------\n");
-            //            foreach (var item in bl.traineesByNumOfTests(true))
-            //            {
-            //                Console.WriteLine(item.Key);
-            //                foreach (var v in item)
-            //                {
-            //                    Console.WriteLine(v.ID + "\t" + v.Gender);
-            //                }
-            //            }
-            //            ////Console.WriteLine("\nTests after update\n-----------------------------------------\n");
-            //            ////Console.WriteLine("\nupdate tranee\n-----------------------------------------\n");
-            //            ////Console.WriteLine("\ntranee after update\n-----------------------------------------\n");
-            //            ////Console.WriteLine("\nTests after update\n-----------------------------------------\n");
-            //            ////Console.WriteLine("\n---------------------\n-----------------------------------------\n");
-            //            ////Console.WriteLine("\n---------------------\n-----------------------------------------\n");
-            //            Console.WriteLine("hi");
-            //            Console.ReadKey();
+            }
+            Console.WriteLine("\nupdate\n-----------------------------------------\n");
+            foreach (var item in bl.traineesByNumOfTests(true))
+            {
+                Console.WriteLine(item.Key);
+                foreach (var v in item)
+                {
+                    Console.WriteLine(v.ID + "\t" + v.Gender);
+                }
+            }
+            ////Console.WriteLine("\nTests after update\n-----------------------------------------\n");
+            ////Console.WriteLine("\nupdate tranee\n-----------------------------------------\n");
+            ////Console.WriteLine("\ntranee after update\n-----------------------------------------\n");
+            ////Console.WriteLine("\nTests after update\n-----------------------------------------\n");
+            ////Console.WriteLine("\n---------------------\n-----------------------------------------\n");
+            ////Console.WriteLine("\n---------------------\n-----------------------------------------\n");
+            Console.WriteLine("hi");
+            Console.ReadKey();
 
 
 
