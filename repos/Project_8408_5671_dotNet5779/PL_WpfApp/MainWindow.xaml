@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="tester_button" Content="Tester" HorizontalAlignment="Center" Margin="41,5,651,5" VerticalAlignment="Center" Width="100" Height="130" Click="Tester_button_Click"/>
+        <Button x:Name="trainee_button" Content="Trainee" HorizontalAlignment="Center" Margin="41,135,651,15" VerticalAlignment="Center" Width="100" Height="130" Click="Trainee_button_Click" Grid.RowSpan="2"/>
+        <Button x:Name="driving_test_button" Content="Drivung test" HorizontalAlignment="Center" Margin="41,139,651,11" Grid.Row="1" VerticalAlignment="Center" Width="100" Height="130" Click="Driving_test_button_Click" Grid.RowSpan="2"/>
+        <local:DrivingTest  x:Name="DrivingTest" HorizontalAlignment="Left" Height="441" Margin="199,0,0,-21" VerticalAlignment="Top" Width="500" Grid.RowSpan="3" Visibility="Visible"/>
+        <local:Tester  x:Name="Tester" HorizontalAlignment="Left" Height="410" Margin="199,-1,0,0" VerticalAlignment="Top" Width="500" Grid.RowSpan="3" Visibility="Visible"/>
+        <local:Trainee  x:Name="Trainee" HorizontalAlignment="Left" Height="409" VerticalAlignment="Top" Width="500" Margin="199,11,0,0" Grid.RowSpan="3" Visibility="Visible"/>
+
     </Grid>
 </Window>

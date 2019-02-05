@@ -19,7 +19,8 @@ namespace DAL
                 CreateFiles();
             else
                 LoadData();
-            init();
+            
+           
 
         }
 
@@ -65,9 +66,7 @@ namespace DAL
                 testerRoot = XElement.Load(testerPath);
                 testRoot = XElement.Load(testPath);
 
-                traineeRoot.RemoveAll();
-                testerRoot.RemoveAll();
-                testRoot.RemoveAll();
+               
             }
             catch
             {
@@ -86,7 +85,7 @@ namespace DAL
             {
                 for (int j = 0; j < 6; j++)
                 {
-                    schedule.data[i][j] = bool.Parse(xElement.Element("Luz").Element(day.ToString()).Element("hour" + j.ToString()).Value);
+                    schedule.Data[i][j] = bool.Parse(xElement.Element("Luz").Element(day.ToString()).Element("hour" + j.ToString()).Value);
                 }
                 day++;
             }
@@ -101,7 +100,7 @@ namespace DAL
                 XElement xElementDay = new XElement(day.ToString());
                 for (int j = 0; j < 6; j++)
                 {
-                    xElementDay.Add(new XElement("hour" + j.ToString(), schedule.data[i][j].ToString()));
+                    xElementDay.Add(new XElement("hour" + j.ToString(), schedule.Data[i][j].ToString()));
                 }
                 xElement.Add(xElementDay);
                 day++;
@@ -121,7 +120,7 @@ namespace DAL
             tester.Address.City = xElement.Element("Address").Element("City").Value;
             tester.Address.StreetName = xElement.Element("Address").Element("StreetName").Value;
             tester.Address.Number = int.Parse(xElement.Element("Address").Element("Number").Value);
-            tester.PhoneNumber = xElement.Element("PhoneNumber").Value;
+            tester.phoneNumber = xElement.Element("PhoneNumber").Value;
             tester.Experience = int.Parse(xElement.Element("Experience").Value);
             tester.MaxTestWeekly = int.Parse(xElement.Element("MaxTestWeekly").Value);
             tester.MaxDistance = int.Parse(xElement.Element("MaxDistance").Value);
@@ -140,7 +139,7 @@ namespace DAL
                                                            new XElement("Address", new XElement("City", tester.Address.City),
                                                                                   new XElement("StreetName", tester.Address.StreetName),
                                                                                   new XElement("Number", tester.Address.Number.ToString())),
-                                                           new XElement("PhoneNumber", tester.PhoneNumber),
+                                                           new XElement("PhoneNumber", tester.phoneNumber),
                                                            new XElement("Experience", tester.Experience),
                                                            new XElement("MaxTestWeekly", tester.MaxTestWeekly),
                                                            new XElement("MaxDistance", tester.MaxDistance),
@@ -225,7 +224,7 @@ namespace DAL
             trainee.Address.City = xElement.Element("Address").Element("City").Value;
             trainee.Address.StreetName = xElement.Element("Address").Element("StreetName").Value;
             trainee.Address.Number = int.Parse(xElement.Element("Address").Element("Number").Value);
-            trainee.PhoneNumber = xElement.Element("PhoneNumber").Value;
+            trainee.phoneNumber = xElement.Element("PhoneNumber").Value;
             trainee.LessonsNb = int.Parse(xElement.Element("LessonsNb").Value);
             trainee.DrivingSchool = xElement.Element("DrivingSchool").Value;
             trainee.CarTrained.carType = (carType)Enum.Parse(typeof(carType), xElement.Element("CarTrained").Element("carType").Value);
@@ -245,7 +244,7 @@ namespace DAL
                                                            new XElement("Address", new XElement("City", trainee.Address.City),
                                                                                   new XElement("StreetName", trainee.Address.StreetName),
                                                                                   new XElement("Number", trainee.Address.Number.ToString())),
-                                                           new XElement("PhoneNumber", trainee.PhoneNumber),
+                                                           new XElement("PhoneNumber", trainee.phoneNumber),
                                                            new XElement("LessonsNb", trainee.LessonsNb),
                                                              new XElement("DrivingSchool", trainee.DrivingSchool),
                                                           new XElement("Instructor", new XElement("FirstName", trainee.Instructor.FirstName)
@@ -319,10 +318,10 @@ namespace DAL
 
 
         //A.R.U.D tests
-        BE.Test convertTest(XElement xElement)
+        BE.DrivingTest convertTest(XElement xElement)
         {
-            Test test = new Test() { requirements = new Requirements(), StartingPoint = new Address(), carType = new CarType() };
-            test.codeOfTest = int.Parse(xElement.Element("codeOfTest").Value);
+            DrivingTest test = new DrivingTest() { requirements = new Requirements(), StartingPoint = new Address(), carType = new CarType() };
+            test.TestNumber = int.Parse(xElement.Element("TestNumber").Value);
             test.Tester_ID = xElement.Element("Tester_ID").Value;
             test.Trainee_ID = xElement.Element("Trainee_ID").Value;
             test.Date = DateTime.Parse(xElement.Element("Date").Value);
@@ -342,10 +341,10 @@ namespace DAL
             return test;
 
         }
-        XElement convertTest(Test test)
+        XElement convertTest(DrivingTest test)
         {
             return new XElement("Test",
-                 new XElement("codeOfTest", test.codeOfTest),
+                 new XElement("TestNumber", test.TestNumber),
                  new XElement("Tester_ID", test.Tester_ID),
                  new XElement("Trainee_ID", test.Trainee_ID),
                  new XElement("Date", test.Date.ToString()),
@@ -363,16 +362,16 @@ namespace DAL
                                  , new XElement("blinks", test.requirements.blinks)
                                  , new XElement("breks", test.requirements.breks)));
         }
-        public List<Test> GetTests()
+        public List<DrivingTest> GetDrivingTests()
         {
-            List<Test> tests = new List<Test>();
+            List<DrivingTest> tests = new List<DrivingTest>();
             tests = (from item in testRoot.Elements()
                      select convertTest(item)).ToList();
             if (!tests.Any())
                 throw new Exception("There is no tests  in the database");
             return tests;
         }
-        public Test getTest(int cod)
+        public DrivingTest GetTests(int cod)
         {
             XElement newTest = null;
             try
@@ -389,11 +388,11 @@ namespace DAL
                 return null;
             return convertTest(newTest);
         }
-        public bool AddTest(Test drivingTest)
+        public bool AddDrivingTest(DrivingTest drivingTest)
         {
-            if (drivingTest.codeOfTest == 0)
+            if (drivingTest.TestNumber == 0)
             {
-                drivingTest.codeOfTest = Configuration.CODE_OF_TEST++;
+                drivingTest.TestNumber = Configuration.Test_Number;
             }
 
             testRoot.Add(convertTest(drivingTest));
@@ -401,11 +400,11 @@ namespace DAL
             return true;
         }
 
-        public bool RemoveTest(Test drivingTest)
+        public bool RemoveDrivingTest(DrivingTest drivingTest)
         {
             XElement temp_Test = null;
             temp_Test = (from item in testRoot.Elements()
-                         where drivingTest.codeOfTest == int.Parse(item.Element("codeOfTest").Value)
+                         where drivingTest.TestNumber== int.Parse(item.Element("codeOfTest").Value)
                          select item).FirstOrDefault();
             if (temp_Test == null)
                 throw new Exception("The current drivingTest is not in the database");
@@ -414,10 +413,10 @@ namespace DAL
             return true;
         }
 
-        public bool UpdateTest(Test drivingTest)
+        public bool UpdateDrivingTest(DrivingTest drivingTest)
         {
-            RemoveTest(drivingTest);
-            AddTest(drivingTest);
+            RemoveDrivingTest(drivingTest);
+            AddDrivingTest(drivingTest);
             return true;
         }
         public void init()
@@ -435,7 +434,7 @@ namespace DAL
                     StreetName = "pisga",
 
                 },
-                PhoneNumber = "0542520196",
+                phoneNumber = "0542520196",
                 CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                 DrivingSchool = "beit sefer",
                 Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
@@ -454,7 +453,7 @@ namespace DAL
                     StreetName = "pisga",
 
                 },
-                PhoneNumber = "0542520196",
+                phoneNumber = "0542520196",
                 CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                 DrivingSchool = "beit sefer",
                 Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
@@ -473,7 +472,7 @@ namespace DAL
                     StreetName = "pisga",
 
                 },
-                PhoneNumber = "0542520196",
+                phoneNumber = "0542520196",
                 CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                 DrivingSchool = "beit sefer",
                 Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
@@ -492,7 +491,7 @@ namespace DAL
                     Number = 21,
                     StreetName = "havvad haleumi",
                 },
-                PhoneNumber = "054999999",
+                phoneNumber = "054999999",
 
                 DayOfBirth = DateTime.Now.AddYears(-50),
                 Gender = Gender.MALE,
@@ -518,7 +517,7 @@ namespace DAL
                     Number = 78,
                     StreetName = "gilgal",
                 },
-                PhoneNumber = "054999999",
+                phoneNumber = "054999999",
 
                 DayOfBirth = DateTime.Now.AddYears(-50),
                 Gender = Gender.MALE,
@@ -534,16 +533,17 @@ namespace DAL
                         new bool[6] { true, true, true, true, true, true} })
             });
 
-            AddTest(new Test()
+            AddDrivingTest(new DrivingTest()
             {
                 Trainee_ID = "S1",
                 Tester_ID = "T1",
                 carType = new CarType() { carType = carType.Private, gearType = GearType.Automatic },
-                codeOfTest = 0,
+                TestNumber = 0,
                 Date = new DateTime(3000, 01, 01),
                 StartingPoint = new Address() { City = "s1", Number = 1, StreetName = "s1" },
             });
         }
+
 
     }
 }

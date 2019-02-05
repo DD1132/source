@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="CarType.cs" />
     <Compile Include="Configuration.cs" />
     <Compile Include="DayHours.cs" />
     <Compile Include="DrivingTest.cs" />

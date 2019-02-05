@@ -1,6 +1,4 @@
 C:\Users\didi\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
-C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\bin\Debug\DAL.dll.config
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\bin\Debug\DAL.dll
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\bin\Debug\DAL.pdb
@@ -10,6 +8,8 @@ C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\bin\Debug\BE.dll.config
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\bin\Debug\DS.pdb
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\bin\Debug\DS.dll.config
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.dll
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\DAL\obj\Debug\DAL.pdb

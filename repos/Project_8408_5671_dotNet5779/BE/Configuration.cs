@@ -14,5 +14,6 @@ namespace BE
         public static int MIN_TRAINEE_AGE = 16;
         public static int MIN_GAP_TEST = 30;
         public static int MIN_LESSONS_TO_REGISTER = 20;
+        public static int Test_Number = 1000000;
     }
 }

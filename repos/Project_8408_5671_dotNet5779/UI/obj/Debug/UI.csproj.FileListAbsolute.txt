@@ -1,21 +1,18 @@
 C:\Users\didi\source\repos\Project_8408_5671_dotNet5779\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
-C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\UI.exe.config
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\UI.exe
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\UI.pdb
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\BE.dll
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\BL.dll
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\DAL.dll
-C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\DS.dll
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\BE.pdb
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\BE.dll.config
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\BL.pdb
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\BL.dll.config
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\DAL.pdb
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\DAL.dll.config
-C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\DS.pdb
-C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\bin\Debug\DS.dll.config
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\obj\Debug\UI.csprojAssemblyReference.cache
+C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\obj\Debug\UI.csproj.CopyComplete
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\obj\Debug\UI.exe
 C:\Users\didi\Documents\Visual Studio 2017\source\repos\Project_8408_5671_dotNet5779\UI\obj\Debug\UI.pdb

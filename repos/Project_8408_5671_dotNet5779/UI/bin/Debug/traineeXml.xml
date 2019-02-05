@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trainees>
+  <Trainee>
+    <ID>S2</ID>
+    <Name>
+      <FirstName>s2</FirstName>
+      <LastName>s2</LastName>
+    </Name>
+    <DayOfBirth>31/01/2002 12:58:31</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>jerusalem</City>
+      <StreetName>pisga</StreetName>
+      <Number>45</Number>
+    </Address>
+    <PhoneNumber>0542520196</PhoneNumber>
+    <LessonsNb>25</LessonsNb>
+    <DrivingSchool>beit sefer</DrivingSchool>
+    <Instructor>
+      <FirstName>moshe</FirstName>
+      <LastName>bfx</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>S3</ID>
+    <Name>
+      <FirstName>s3</FirstName>
+      <LastName>s3</LastName>
+    </Name>
+    <DayOfBirth>31/01/2002 12:58:31</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>jerusalem</City>
+      <StreetName>pisga</StreetName>
+      <Number>45</Number>
+    </Address>
+    <PhoneNumber>0542520196</PhoneNumber>
+    <LessonsNb>25</LessonsNb>
+    <DrivingSchool>beit sefer</DrivingSchool>
+    <Instructor>
+      <FirstName>moshe</FirstName>
+      <LastName>bfx</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>S4</ID>
+    <Name>
+      <FirstName>s4</FirstName>
+      <LastName>s4</LastName>
+    </Name>
+    <DayOfBirth>31/01/2001 12:58:54</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>s4</City>
+      <StreetName>s4</StreetName>
+      <Number>4</Number>
+    </Address>
+    <PhoneNumber>0542520196</PhoneNumber>
+    <LessonsNb>20</LessonsNb>
+    <DrivingSchool>beit sefer</DrivingSchool>
+    <Instructor>
+      <FirstName>moshe</FirstName>
+      <LastName>bfx</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>S5</ID>
+    <Name>
+      <FirstName>s5</FirstName>
+      <LastName>s5</LastName>
+    </Name>
+    <DayOfBirth>31/01/2001 12:58:54</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>s5</City>
+      <StreetName>s5</StreetName>
+      <Number>5</Number>
+    </Address>
+    <PhoneNumber>0542520196</PhoneNumber>
+    <LessonsNb>20</LessonsNb>
+    <DrivingSchool>beit sefer</DrivingSchool>
+    <Instructor>
+      <FirstName>moshe</FirstName>
+      <LastName>bfx</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>S6</ID>
+    <Name>
+      <FirstName>s6</FirstName>
+      <LastName>s6</LastName>
+    </Name>
+    <DayOfBirth>31/01/2000 12:58:54</DayOfBirth>
+    <Gender>FEMALE</Gender>
+    <Address>
+      <City>s6</City>
+      <StreetName>s6</StreetName>
+      <Number>6</Number>
+    </Address>
+    <PhoneNumber>0542520196</PhoneNumber>
+    <LessonsNb>20</LessonsNb>
+    <DrivingSchool>beit sefer</DrivingSchool>
+    <Instructor>
+      <FirstName>moshe</FirstName>
+      <LastName>bfx</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>S7</ID>
+    <Name>
+      <FirstName>s7</FirstName>
+      <LastName>s7</LastName>
+    </Name>
+    <DayOfBirth>31/01/1999 12:58:54</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>s7</City>
+      <StreetName>s7</StreetName>
+      <Number>7</Number>
+    </Address>
+    <PhoneNumber>0542520196</PhoneNumber>
+    <LessonsNb>20</LessonsNb>
+    <DrivingSchool>beit sefer</DrivingSchool>
+    <Instructor>
+      <FirstName>moshe</FirstName>
+      <LastName>bfx</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>S1</ID>
+    <Name>
+      <FirstName>s1</FirstName>
+      <LastName>s1</LastName>
+    </Name>
+    <DayOfBirth>31/01/2002 12:59:06</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>s1</City>
+      <StreetName>s1</StreetName>
+      <Number>1</Number>
+    </Address>
+    <PhoneNumber>0542520196</PhoneNumber>
+    <LessonsNb>20</LessonsNb>
+    <DrivingSchool>beit sefer</DrivingSchool>
+    <Instructor>
+      <FirstName>moshe</FirstName>
+      <LastName>bfx</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+</trainees>

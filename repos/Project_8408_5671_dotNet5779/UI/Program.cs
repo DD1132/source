@@ -28,8 +28,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -56,8 +55,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -85,8 +83,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -114,8 +111,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -143,8 +139,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 19,
@@ -171,8 +166,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -199,8 +193,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -228,8 +221,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -255,8 +247,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.Private,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,
@@ -289,7 +280,7 @@ namespace UI
                     DayOfBirth = DateTime.Now.AddYears(-39),
                     Gender = Gender.MALE,
                     Experience = 10,
-                    Expertise = CarType.Private,
+                    Expertise = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     MaxDistance = 1000,
                     MaxTestWeekly = 5,
                     Luz = new Schedule()
@@ -326,7 +317,7 @@ namespace UI
                     DayOfBirth = DateTime.Now.AddYears(-50),
                     Gender = Gender.MALE,
                     Experience = 10,
-                    Expertise = CarType.Private,
+                    Expertise =  new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     MaxDistance = 1000,
                     MaxTestWeekly = 1,
                     Luz = new Schedule()
@@ -363,7 +354,7 @@ namespace UI
                     DayOfBirth = DateTime.Now.AddYears(-50),
                     Gender = Gender.MALE,
                     Experience = 10,
-                    Expertise = CarType.Private,
+                    Expertise =  new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     MaxDistance = 1000,
                     MaxTestWeekly = 5,
                     Luz = new Schedule()
@@ -400,7 +391,7 @@ namespace UI
                     DayOfBirth = DateTime.Now.AddYears(-50),
                     Gender = Gender.MALE,
                     Experience = 10,
-                    Expertise = CarType.Private,
+                    Expertise =  new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     MaxDistance = 1000,
                     MaxTestWeekly = 5,
                     Luz = new Schedule()
@@ -437,7 +428,7 @@ namespace UI
                     DayOfBirth = DateTime.Now.AddYears(-50),
                     Gender = Gender.MALE,
                     Experience = 10,
-                    Expertise = CarType.Private,
+                    Expertise = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     MaxDistance = 1000,
                     MaxTestWeekly = 5,
                     Luz = new Schedule()
@@ -472,7 +463,7 @@ namespace UI
                     DayOfBirth = DateTime.Now.AddYears(-50),
                     Gender = Gender.MALE,
                     Experience = 10,
-                    Expertise = CarType.Private,
+                    Expertise = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     MaxDistance = 1000,
                     MaxTestWeekly = 5,
                     Luz = new Schedule()
@@ -562,8 +553,7 @@ namespace UI
 
                     },
                     phoneNumber = "0542520196",
-                    CarTrained = CarType.TwoWheels,
-                    GearType = GearType.Automatic,
+                    CarTrained = new CarType { carType = carType.Private, gearType = GearType.Automatic },
                     DrivingSchool = "beit sefer",
                     Instructor = new Name { FirstName = "moshe", LastName = "bfx" },
                     LessonsNb = 20,

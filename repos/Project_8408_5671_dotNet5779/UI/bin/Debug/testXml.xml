@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tests>
+  <Test>
+    <TestNumber>1000000</TestNumber>
+    <Tester_ID>T1</Tester_ID>
+    <Trainee_ID>S1</Trainee_ID>
+    <Date>01/01/3000 00:00:00</Date>
+    <StartingPoint>
+      <City>s1</City>
+      <StreetName>s1</StreetName>
+      <Number>1</Number>
+    </StartingPoint>
+    <carType>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </carType>
+    <Comment> </Comment>
+    <Success>false</Success>
+    <requirements>
+      <Mirrors>false</Mirrors>
+      <revers>false</revers>
+      <speed>false</speed>
+      <U_turn>false</U_turn>
+      <blinks>false</blinks>
+      <breks>false</breks>
+    </requirements>
+  </Test>
+</tests>

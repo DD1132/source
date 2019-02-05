@@ -10,7 +10,6 @@ namespace BE
     public class Trainee : Person
     {
         public CarType CarTrained { get; set; }
-        public GearType GearType { get; set; }
         public String DrivingSchool { get; set; }
         public Name Instructor { get; set; }
         public int LessonsNb { get; set; }  //new balance of lessons number
@@ -23,7 +22,6 @@ namespace BE
                 Address = this.Address.Clone(),
                 DayOfBirth = this.DayOfBirth,
                 CarTrained = this.CarTrained,
-                GearType = this.GearType,
                 DrivingSchool = this.DrivingSchool,
                 Instructor = this.Instructor,
                 LessonsNb = this.LessonsNb,

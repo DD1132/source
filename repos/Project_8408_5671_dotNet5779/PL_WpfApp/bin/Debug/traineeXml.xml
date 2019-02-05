@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trainees>
+  <Trainee>
+    <ID>4637291</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>27/12/1999 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>kroiut</City>
+      <StreetName>dsfg</StreetName>
+      <Number>12</Number>
+    </Address>
+    <PhoneNumber>0544964805</PhoneNumber>
+    <LessonsNb>23</LessonsNb>
+    <DrivingSchool>machon</DrivingSchool>
+    <Instructor>
+      <FirstName>didi</FirstName>
+      <LastName>yoni</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>463</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>27/12/1999 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City>kroiut</City>
+      <StreetName>dsfg</StreetName>
+      <Number>12</Number>
+    </Address>
+    <PhoneNumber>0544964805</PhoneNumber>
+    <LessonsNb>23</LessonsNb>
+    <DrivingSchool>machon</DrivingSchool>
+    <Instructor>
+      <FirstName>did</FirstName>
+      <LastName>yo</LastName>
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>kgvhuv</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>100</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>1234</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>100</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>900</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>100</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>200</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>100</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>35</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>200</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>356</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>200</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>125566</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>1000</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>1234567788</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>100</LessonsNb>
+    <DrivingSchool>נצי</DrivingSchool>
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+  <Trainee>
+    <ID>2888</ID>
+    <Name>
+      <FirstName />
+      <LastName />
+    </Name>
+    <DayOfBirth>01/01/2000 00:00:00</DayOfBirth>
+    <Gender>MALE</Gender>
+    <Address>
+      <City />
+      <StreetName />
+      <Number>0</Number>
+    </Address>
+    <PhoneNumber />
+    <LessonsNb>23</LessonsNb>
+    <DrivingSchool />
+    <Instructor>
+      <FirstName />
+      <LastName />
+    </Instructor>
+    <CarTrained>
+      <carType>Private</carType>
+      <gearType>Automatic</gearType>
+    </CarTrained>
+  </Trainee>
+</trainees>
